@@ -1,8 +1,8 @@
-PHP-Port-Test  
-Requiements:  
+# PHP-Port-Test
+### Requiements:  
 	PHP function: fsockopen  
   
-For example:  
+### For example:  
 	request:  
 		?h=byxong.com&port=22  
 	result: (json)  
