@@ -7,7 +7,7 @@ $fp = @fsockopen($h,$p,$errno,$errstr,0.1);
 if (!$fp) {
 	$result = "Closed";
     }else{
-	$result = "Opend";
+	$result = "Open";
 }
 $feedback = array
        (
