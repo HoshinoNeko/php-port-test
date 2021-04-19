@@ -4,6 +4,6 @@
   
 ### For example:  
 	request:  
-		?h=byxong.com&port=22  
+		?h=cheng.pet&port=80
 	result: (json)  
-		{"host":"byxong.com","port":"22","result":"Closed"}  
+		{"host":"cheng.pet","port":"80","result":"Open"}  
