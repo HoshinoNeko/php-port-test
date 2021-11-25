@@ -3,18 +3,18 @@ header('Content-Type:text/json;charset=utf-8');
 $query = $_SERVER["QUERY_STRING"];
 parse_str($query);
 parse_str($query, $query); 
-$fp = @fsockopen($h,$p,$errno,$errstr,0.1);
+$fp = @fsockopen($h,$p,$errno,$errstr,1);
 if (!$fp) {
-	$result = "Closed";
+	$test_result = "Closed";
     }else{
-	$result = "Open";
+	$test_result = "Open";
 }
-$feedback = array
+$result = array
        (
           'host'=>$h,
           'port'=>$p,
-          'result'=>$result
+          'result'=>$test_result
        );
-$jsonback = json_encode($feedback);
-echo $jsonback;
+$result_json = json_encode($result);
+echo $result_json;
 ?>
